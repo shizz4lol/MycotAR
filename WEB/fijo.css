@@ -1,0 +1,50 @@
+*{
+    padding:0;
+    margin:0;
+}
+/* caracteristicas generales nav y footer, contenido y links*/
+nav, footer{
+    height:80px;
+    width:100%;
+    background-color: #f18429;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:white;
+    font-weight: bold;
+    
+}
+
+nav .txt-head{
+    display:inline-flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right:10px;
+
+}
+.header-link:hover{
+    background-color: #d86a0e;
+    border-radius: 20px;
+}
+.txt-head .header-link, .foot-desc{
+    padding:10px;
+    align-content: center;
+}
+nav a{
+    text-decoration: none;
+    color:inherit
+}
+/* simbolo de menu */
+nav .hambur{
+    display:inline;
+    justify-content: left;
+    
+    align-content: center;
+}
+#menu{
+    margin:5px;
+}
+a{
+    color:#d86a0e;
+}
