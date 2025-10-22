@@ -10,25 +10,25 @@
     border-radius: 20px;
     align-self: center;
 }
-#col{
+#columna1{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 800px;
+    width: 700px;
 }
 h1{
     font-size: 6em;
 }
-#col #titulo{
+#columna1 #titulo{
     border: 1px solid black;
     height: 150px;
 }
-#col .noticias{
+#columna1 .noticias{
     width: 500px;
     height: 300px;
 }
 
-#noti_otros{
+#columna2{
     border: 1px solid black;
     display: flex;
     flex-direction: column;
@@ -36,7 +36,7 @@ h1{
     height: 700px;
     justify-content: space-between;
 }
-#noti_otros .noticias{
+#columna2 .noticias{
     width: 300px;
     height: 100px;
 }

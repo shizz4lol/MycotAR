@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="fijo.css" type="text/css">
+    <link rel="stylesheet" href="formulario.css" type="text/css">
 </head>
 <body>
     <header>
@@ -23,13 +24,21 @@
             </div>
         </nav>
        </header>
-       <section>
-        <div>
-            <big><h1>CONTACTO</h1></big>
-        </div>
-        <!-- Espacios por comodidad -->
-        <br> <br><br><br><br><br><br>
-       </section>
+       <div id="contenido">
+        <h1 id="titulo_form">¡Contactanos!</h1>
+        <form action="" method="post" class="form">
+            <label for="nom" class="label">Nombre y Apellido</label>
+            <input type="text" id="nom" name="nom" class="campo"><br> 
+            <label for="correo" class="label">Correo</label>
+            <input type="email" id="correo" name="correo" class="campo"><br>
+            <label for="razon" class="label">Razon de contacto</label>
+            <input type="text" id="razon" name="razon" class="campo"><br>
+            <label for="contacto" class="label">Descripcion</label>
+            <textarea id="contacto" cols="40" rows="15" class="campo">
+            </textarea><br>
+            <input type="submit" id="enviar" value="ENVIAR" >
+        </form>
+       </div>
        <footer>
             <div class="foot-desc">MycotAR© since 2025</div>
             <div class="foot-desc">Por: Ámbar L. Rizzuto</div>
