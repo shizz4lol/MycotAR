@@ -1,0 +1,27 @@
+h1{
+    color:#d86a0e;
+    margin:10px;
+}
+#contenido{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:space-between;
+}
+#test{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 400px;
+}
+.boton{
+    height: 100px;
+    width: 300px;
+    border:5px solid #f44548;
+    background-color: white;
+    border-radius: 50px;
+    font-size: 1.8em;
+    font-weight: bold;
+    color:#f44548;
+}

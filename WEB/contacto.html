@@ -6,37 +6,38 @@
     <title>Contacto</title>
     <link rel="stylesheet" href="fijo.css" type="text/css">
     <link rel="stylesheet" href="formulario.css" type="text/css">
+    <script src="formulario.js" type="text/javascript"></script>
 </head>
-<body>
+<body >
     <header>
         <nav>
             <div id="menu"><img src="Imagenes-Multimedia/lineas_menu.png" alt="menu" width="50px" height="50px"></div>
-    
             <div class="txt-head">
-                
                 <div class="header-link"><a href="home.html">Home</a></div>
                 <div class="header-link"><a href="about.html">Sobre nosotros</a></div>
                 <div class="header-link"><a href="noticias.html">Noticias</a></div>
                 <div class="header-link"><a href="juegos.html">Juegos</a></div>
                 <div class="header-link"><a href="contacto.html">Contacto</a></div>
                 <div class="header-link"><a href="log_in.html">Log In</a></div>
-                
             </div>
         </nav>
        </header>
        <div id="contenido">
         <h1 id="titulo_form">¡Contactanos!</h1>
-        <form action="" method="post" class="form">
+        <form action="#" method="post" class="form" id="contacto">
             <label for="nom" class="label">Nombre y Apellido</label>
-            <input type="text" id="nom" name="nom" class="campo"><br> 
+            <input type="text" id="nom" name="nom" class="campo"  required><br>
+            <p name="parrafo" id="warning1"></p> 
             <label for="correo" class="label">Correo</label>
-            <input type="email" id="correo" name="correo" class="campo"><br>
+            <input type="email" id="correo" name="correo" class="campo"  required><br>
+            <p name="parrafo" id="warning2"></p>
             <label for="razon" class="label">Razon de contacto</label>
-            <input type="text" id="razon" name="razon" class="campo"><br>
+            <input type="text" id="razon" name="razon" class="campo" required><br>
+            <p name="parrafo" id="warning3"></p>
             <label for="contacto" class="label">Descripcion</label>
-            <textarea id="contacto" cols="40" rows="15" class="campo">
+            <textarea id="contacto" cols="40" rows="15" class="campo" id="text">
             </textarea><br>
-            <input type="submit" id="enviar" value="ENVIAR" >
+            <input type="submit" id="enviar" value="ENVIAR" onclick="vacio()">
         </form>
        </div>
        <footer>
