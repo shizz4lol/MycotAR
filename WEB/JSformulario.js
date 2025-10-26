@@ -1,9 +1,9 @@
 function vacio(){
     $inputs = document.getElementsByClassName("campo");
     var $v;
-    $validacion= Array();
+    /* $validacion= Array(); */
     for ($i=0;$i<$inputs.length;$i++){
-        if ($inputs[$i].value==""){
+        if ($inputs[$i]==""){
             $v=1;
         }}
         /* else{
