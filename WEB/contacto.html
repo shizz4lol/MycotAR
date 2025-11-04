@@ -24,20 +24,20 @@
        </header>
        <div id="contenido">
         <h1 id="titulo_form">¡Contactanos!</h1>
-        <form action="#" method="post" class="form" id="contacto"  onsubmit=" return verif_vacio(event)">
+        <form action="#" method="post" class="form" id="form"  onsubmit=" return verif_vacio(event)">
             <label for="nom" class="label">Nombre y Apellido</label>
-            <input type="text" id="nom" name="nom" class="campo" placeholder="Nombres - Apellido" ><br> 
-            <p name="warning" class="warning"></p>
+            <input type="text" id="nom" name="nom" class="campo" placeholder="Nombres - Apellido" >
+            <p class="warning" id="nom2"></p>
             <label for="correo" class="label">Correo</label>
-            <input type="email" id="correo" name="correo" class="campo"  placeholder="Correo electronico"><br>
-            <p name="warning" class="warning"></p>
+            <input type="text" id="correo" name="correo" class="campo"  placeholder="Correo electronico" maxlength="50">
+            <p class="warning" id="correo2"></p>
             <label for="razon" class="label">Razon de contacto</label>
-            <input type="text" id="razon" name="razon" class="campo" placeholder="Ingrese su razon"><br>
-            <p name="warning" class="warning"></p>
+            <input type="text" id="razon" name="razon" class="campo" placeholder="Ingrese su razon" maxlength="40">
+            <p class="warning" id="razon2"></p>
             <label for="contacto" class="label">Descripcion</label>
-            <textarea id="contacto" cols="40" rows="15" class="campo" id="text">
+            <textarea id="contacto" cols="40" rows="15" class="campo" id="text" maxlength="200">
             </textarea><br>
-            <p name="warning" class="warning"></p>
+            <p class="warning" id="contacto2"></p>
             <input type="submit" id="enviar" value="ENVIAR">
             <p id="exito" class="exitoso"></p>
         </form>
