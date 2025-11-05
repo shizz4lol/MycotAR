@@ -1,0 +1,63 @@
+h1{ 
+    margin-top: 30px;
+    font-size: 2em;
+    color:#f44548;
+    justify-self: center;
+}
+#preguntas{
+    width: 600px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start;
+    justify-self: center; 
+} 
+input[type="radio"] { 
+    appearance: none; /* quita el estilo predeterminado */ 
+    width: 20px; 
+    height: 20px; 
+    border-radius: 50%; 
+    border: 1px solid #333;
+}
+input[type="radio"]:checked { 
+background-color: #f44548; 
+border-color: #f44548; 
+} 
+.consigna{ 
+    margin-left: 10px; 
+    margin-bottom: 10px; 
+    font-size: 1.4em; 
+    width: 400px; 
+} 
+label{ 
+    font-size:20px; 
+    margin-bottom: 10px; 
+} 
+.pregun{ 
+    width: 540px;
+    padding:20px; 
+    background-color: #facb96;
+    margin:20px;
+}
+#enviar{
+    display: block;
+    width: 150px;
+    height: 70px;
+    border: 5px solid #f44548;
+    border-radius: 50px;
+    background-color: white;
+    color:#f44548;
+    font-size: 1.5em;
+    font-weight: bold;
+    justify-self: center;
+}
+
+#res{
+    display: flex;
+    justify-self: center;
+    width: 500px;
+
+}
+#res p{
+    font-size:4em;
+
+}

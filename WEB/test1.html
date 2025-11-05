@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General</title>
+    <link rel="stylesheet" href="CSSfijo.css" type="text/css">
+    <link rel="stylesheet" href="CSStest.css" type="text/css">
+    <script type="text/javascript" src="JSjuegos.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="menu"><img src="Imagenes-Multimedia/lineas_menu.png" alt="menu" width="50px" height="50px"></div>
+            <div class="txt-head">
+                <div class="header-link"><a href="home.html">Home</a></div>
+                <div class="header-link"><a href="about.html">Sobre nosotros</a></div>
+                <div class="header-link"><a href="noticias.html">Noticias</a></div>
+                <div class="header-link"><a href="juegos.html">Juegos</a></div>
+                <div class="header-link"><a href="contacto.html">Contacto</a></div>
+                <div class="header-link"><a href="log_in.html">Log In</a></div>
+            </div>
+        </nav>
+       </header>
+       <section>
+        <form action="#" method="post" onsubmit="correcion(event)" id="form">
+            <h1>Nivel Basico: Informacion general</h1>
+            <div id="preguntas">
+                <div class="pregun">
+                    <p class="consigna">¿Qué son los hongos?</p>
+                    <input type="radio" id="q1a" name="q1" value="f">
+                    <label for="q1a">Plantas sin clorofila</label><br>
+                    <input type="radio" id="q1b" name="q1" value="v">
+                    <label for="q1b">Organismos del reino Fungi</label><br>
+                    <input type="radio" id="q1c" name="q1" value="f">
+                    <label for="q1c">Bacterias descomponedoras</label>
+                </div>
+                <!-- <div class="pregun">
+                    <p class="consigna">¿De qué se alimentan los hongos?</p>
+                    <input type="radio" id="q2a" name="q2" value="f">
+                    <label for="q2a">De la luz solar</label><br>
+                    <input type="radio" id="q2b" name="q2" value="v">
+                    <label for="q2b">De materia orgánica en descomposición</label><br>
+                    <input type="radio" id="q2c" name="q2" value="f">
+                    <label for="q2c">De minerales del suelo</label>
+                </div>
+                <div class="pregun">
+                    <p class="consigna">¿Cómo se llama la estructura reproductiva visible de muchos hongos?</p>
+                    <input type="radio" id="q3a" name="q3" value="f">
+                    <label for="q3a">Espora</label><br>
+                    <input type="radio" id="q3b" name="q3" value="f">
+                    <label for="q3b">Sombrero</label><br>
+                    <input type="radio" id="q3c" name="q3" value="v">
+                    <label for="q3c">Cuerpo fructífero</label>
+                </div>
+                <div class="pregun">
+                    <p class="consigna">¿Qué son las esporas?</p>
+                    <input type="radio" id="q4a" name="q4" value="v">
+                    <label for="q4a">Células reproductivas de los hongos que permiten dispersión y supervivencia</label><br>
+                    <input type="radio" id="q4b" name="q4" value="f">
+                    <label for="q4b">Filamentos que forman al hongo</label><br>
+                    <input type="radio" id="q4c" name="q4" value="f">
+                    <label for="q4c">Estructuras que protegen al micelio</label>
+                </div>
+                <div class="pregun">
+                    <p class="consigna">¿Qué parte del hongo se encuentra bajo tierra y absorbe nutrientes?</p>
+                    <input type="radio" id="q5a" name="q5" value="v">
+                    <label for="q5a">Micelio</label><br>
+                    <input type="radio" id="q5b" name="q5" value="f">
+                    <label for="q5b">Tallo</label><br>
+                    <input type="radio" id="q5c" name="q5" value="f">
+                    <label for="q5c">Basidio</label>
+                </div>
+                <div class="pregun">
+                    <p class="consigna">¿Cuáles son los cuatro tipos principales de hongos?</p>
+                    <input type="radio" id="q6a" name="q6" value="v">
+                    <label for="q6a">Mohos, levaduras, setas y líquenes</label><br>
+                    <input type="radio" id="q6b" name="q6" value="f">
+                    <label for="q6b">Comestibles, parásitos, medicinales y microscópicos</label><br>
+                    <input type="radio" id="q6c" name="q6" value="f">
+                    <label for="q6c">Terrestres, acuáticos, simbióticos y saprófitos</label>
+                </div>
+                <div class="pregun">
+                    <p class="consigna">¿Qué papel cumplen los hongos en los ecosistemas?</p>
+                    <input type="radio" id="q7a" name="q7" value="f">
+                    <label for="q7a">Producen oxígeno</label><br>
+                    <input type="radio" id="q7b" name="q7" value="v">
+                    <label for="q7b">Descomponen materia orgánica</label><br>
+                    <input type="radio" id="q7c" name="q7" value="f">
+                    <label for="q7c">Polinizan flores</label>
+                </div>
+                <div class="pregun">
+                    <p class="consigna">¿Qué diferencia principal hay entre una planta y un hongo?</p>
+                    <input type="radio" id="q8a" name="q8" value="f">
+                    <label for="q8a">Los hongos realizan fotosíntesis</label><br>
+                    <input type="radio" id="q8b" name="q8" value="v">
+                    <label for="q8b">Los hongos carecen de clorofila</label><br>
+                    <input type="radio" id="q8c" name="q8" value="f">
+                    <label for="q8c">Las plantas no tienen paredes celulares</label>
+                </div>
+                <div class="pregun">
+                    <p class="consigna">¿Qué nombre recibe la ciencia que estudia los hongos?</p>
+                    <input type="radio" id="q9a" name="q9" value="f">
+                    <label for="q9a">Botánica</label><br>
+                    <input type="radio" id="q9b" name="q9" value="v">
+                    <label for="q9b">Micología</label><br>
+                    <input type="radio" id="q9c" name="q9" value="f">
+                    <label for="q9c">Zoología</label>
+                </div> -->
+            </div>                
+            <div><input type="submit" value="LISTO" id="enviar"></div>
+        </form>        
+        <div id="res">
+            <p id="r"></p>
+        </div>   
+       </section>
+       <footer>
+            <div class="foot-desc">MycotAR© since 2025</div>
+            <div class="foot-desc">Por: Ámbar L. Rizzuto</div>
+            <div class="foot-desc">Contactanos por: mycotarforo@gmail.com</div>
+       </footer>
+</body>
+</html>
