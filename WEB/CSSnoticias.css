@@ -101,4 +101,8 @@
 #texto .pie{
     font-size: 0.7em;
 }
-
+#columna  #titul{
+    color:#ab341f;
+    font-size: 2em;
+    margin-left: 40px;
+}
