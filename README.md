@@ -1,5 +1,5 @@
 # MycotAR
-Repositorio creado para el proyecto final de Programación Estatica y Laboratorio Web. El dominio es un foro informativo sobre el mundo fungi/las setas.
+Repositorio creado para el proyecto final de Programación Estatica y Laboratorio Web. El dominio es un foro informativo sobre el mundo fungi/las setas.<br>
 Creado por Ambar L. Rizzuto - 5to 5ta E.P.E.T 20
 Estructura del sitio web:<br>
 1-	Inicio/home: nombre del sitio, disposición de noticias, link a los juegos.<br>
