@@ -37,6 +37,7 @@ h2{
     margin-top: 30px;
     width: 600px;
     height: 300px;
+
 }
 #columna1 .noticias img{
     width: 600px;
@@ -55,18 +56,17 @@ h2{
     display: flex;
     flex-direction: column;
     width: 400px;
-    height: 700px;
     justify-content: space-between;
 }
 #columna2 .noticias{
     width: 250px;
     height: 100px;
+    margin:30px;
 }
 #columna2 h3{
     color:#ff5454;
     align-self: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif ;
-
 }
 hr{
     border:0;

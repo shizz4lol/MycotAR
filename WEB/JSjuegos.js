@@ -18,26 +18,26 @@ function correcion(event,id) {
         }
 
         if (seleccion) {
-            if (seleccion.value === "v") {
+            if (seleccion.value=="v") {
                 aciertos++;
-                pregunta.style.backgroundColor = "#d4edda"; // verde claro
+                pregunta.style.backgroundColor="#d4edda"; 
             } else {
-                pregunta.style.backgroundColor = "#f8d7da"; // rojo claro
+                pregunta.style.backgroundColor="#f8d7da"; 
             }
         } else {
-            pregunta.style.backgroundColor = "#fff3cd"; // amarillo si no seleccionó
+            pregunta.style.backgroundColor = "#fff3cd";
         }
     }
     if(aciertos==total){
         otro=document.getElementById('otro')
         otro2=document.getElementById('volver')
         form.innerHTML="";
-        resultado.innerHTML = '¡Lo lograste!<br>';
+        resultado.innerHTML='¡Lo lograste!<br>';
         otro.style.display='inline';
         otro2.style.display='inline';
         console.log(otro)
         otro.onclick = function() {
-            if (id == 'f1') {
+            if (id=='f1') {
                 window.location.replace('test2.html');
             } else if (id=='f2'){
                 window.location.replace('test1.html');
