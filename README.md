@@ -1,7 +1,7 @@
 # MycotAR
 Repositorio creado para el proyecto final de Programación Estatica y Laboratorio Web. El dominio es un foro informativo sobre el mundo fungi/las setas.
 Creado por Ambar L. Rizzuto - 5to 5ta E.P.E.T 20
-Estructura del sitio web:
+Estructura del sitio web:<br>
 1-	Inicio/home: nombre del sitio, disposición de noticias, link a los juegos.
 2-	Sobre nosotros: información mía, del dominio, y otros datos ficticios referidos al foro.
 3-	Noticias: disposición de las noticias (que podrían ser de usuarios variados), junto con una sección de “biblioteca”, o sea información estática cargada predeterminadamente en la página. Boton de “+” para que los usuarios registrados puedan hacer sus noticias, se habilita el simbolo una vez logeado con el usuario "ambar".
