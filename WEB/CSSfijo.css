@@ -52,3 +52,38 @@ a{
     font-size: 4em;
     color:#d86a0e;
 }
+nav #menu ul {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f18429;
+    top: 90px;
+    left:0px;
+    position:absolute;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10;
+}
+nav #menu:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top: 80px;
+    
+}
+nav #menu ul li{
+    padding:10px;
+    margin-left:5px;
+    transition: 200ms;
+    border-bottom: 1px solid #d86a0e;
+}
+#test .boton{
+    height: 100px;
+    width: 300px;
+    border:10px solid #f44548;
+    background-color: white;
+    border-radius: 50px;
+    font-size: 1.8em;
+    font-weight: bold;
+    color:#f44548;
+    justify-self: center;
+}

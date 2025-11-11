@@ -1,8 +1,9 @@
-function verif_vacio(event) {
+function verif(event) {
     //metodo para evitar el default: re-envio del formulario
     event.preventDefault(); 
     const campos = document.getElementsByClassName("campo");
     const p_e = document.getElementById("exito");
+    const h1 = document.getElementById("titulo_form");
     const p_warning = document.getElementsByClassName("warning");
     var parrafos = document.getElementsByTagName("p");
     var cant_vacios = Array();
@@ -18,13 +19,20 @@ function verif_vacio(event) {
     for (i in cant_vacios){
        p_warning[i].innerHTML= "CAMPO VACIO";
     }
-    e=otros();
+   //comprobacion de formulario para ejecutar otras verifiaciones
+    if(h1.innerText=="¡Contactanos!"){
+       e=otros();
+    }
+    else if ((h1.innerText=="LOG IN")&&(vacios==0)){
+      login();
+    }
     if ((vacios == 0)&&(e==0)) {
-      for (i=0;i<parrafos.length;i++){
-        parrafos[i].innerHTML ="";
+        for (i=0;i<parrafos.length;i++){
+          parrafos[i].innerHTML ="";
+        p_e.innerHTML = "¡ENVIADO!";
+        return true; 
       }
-      p_e.innerHTML = "¡ENVIADO!";
-      return true; 
+      
     }
     return false; 
   }
@@ -47,7 +55,22 @@ function otros(){
     error++;
   }
   return (error);
-  /* ^\w+\s\w+\s$ para letras*/
-  /* \w+@\w+\.com */
 
+}
+function login(){
+  
+  var n = document.getElementById("nom");
+  var c =document.getElementById("contra");
+  var ex =document.getElementById("exito");
+  
+  if ((n.value.trim()=="ambar")&&(c.value.trim()=='micontra')){
+      sessionStorage.removeItem("login");
+      sessionStorage.setItem("login", "true");
+      window.location.replace('noticias.html');
+      
+
+  }
+  else if ((n.value.trim())&&(c.value.trim())){
+    ex.innerHTML="Usuario no registrado!!!";
+  }
 }

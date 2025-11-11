@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>General</title>
+    <title>TEST</title>
     <link rel="stylesheet" href="CSSfijo.css" type="text/css">
     <link rel="stylesheet" href="CSStest.css" type="text/css">
     <script type="text/javascript" src="JSjuegos.js"></script>
@@ -12,7 +12,15 @@
 <body>
     <header>
         <nav>
-            <div id="menu"><img src="Imagenes-Multimedia/lineas_menu.png" alt="menu" width="50px" height="50px"></div>
+            <div id="menu"><img src="Imagenes-Multimedia/hongoe.png" alt="menu" width="70px" height="80px">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">Sobre nosotros</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li><a href="juegos.html">Juegos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="log_in.html">Log In</a></li>
+                </ul></div>
             <div class="txt-head">
                 <div class="header-link"><a href="home.html">Home</a></div>
                 <div class="header-link"><a href="about.html">Sobre nosotros</a></div>
@@ -24,8 +32,8 @@
         </nav>
        </header>
        <section>
-        <form action="#" method="post" onsubmit="correcion(event)" id="form">
-            <h1>Nivel Basico: Informacion general</h1>
+        <form action="#" method="post" onsubmit="correcion(event,'f1')" id="form">
+            <h1 id="f1">Nivel Basico: Informacion general</h1>
             <div id="preguntas">
                 <div class="pregun">
                     <p class="consigna">¿Qué son los hongos?</p>
@@ -36,7 +44,7 @@
                     <input type="radio" id="q1c" name="q1" value="f">
                     <label for="q1c">Bacterias descomponedoras</label>
                 </div>
-                <!-- <div class="pregun">
+                <div class="pregun">
                     <p class="consigna">¿De qué se alimentan los hongos?</p>
                     <input type="radio" id="q2a" name="q2" value="f">
                     <label for="q2a">De la luz solar</label><br>
@@ -45,7 +53,7 @@
                     <input type="radio" id="q2c" name="q2" value="f">
                     <label for="q2c">De minerales del suelo</label>
                 </div>
-                <div class="pregun">
+                <!-- <div class="pregun">
                     <p class="consigna">¿Cómo se llama la estructura reproductiva visible de muchos hongos?</p>
                     <input type="radio" id="q3a" name="q3" value="f">
                     <label for="q3a">Espora</label><br>
@@ -109,11 +117,15 @@
                     <label for="q9c">Zoología</label>
                 </div> -->
             </div>                
-            <div><input type="submit" value="LISTO" id="enviar"></div>
-        </form>        
+            <div><input type="submit" value="LISTO" class="boton"></div>
+        </form> 
         <div id="res">
             <p id="r"></p>
         </div>   
+        <div id="b">
+            <button id="otro" class="boton" >OTRO</button> 
+            <button id="volver" class="boton" >VOLVER</button> 
+        </div>       
        </section>
        <footer>
             <div class="foot-desc">MycotAR© since 2025</div>

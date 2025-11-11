@@ -26,12 +26,12 @@ h3, p{
 h3{
     color:#ab341f;
 }
-ul{
+#contenido ul{
     font-size: 1.5em;
     list-style: none;
     padding: 0;
 }
-li::before{
+#contenido li::before{
     content: "➺";
     color:#d86a0e;
     padding: 5px;

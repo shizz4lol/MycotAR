@@ -3,13 +3,20 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
-#h1{ 
-    margin-top: 30px;
-    font-size: 2em;
+#top{
+    padding:40px;
+    padding-bottom: 0px;
+    display: flex;
+    width: 760px;
+    justify-self: flex-end;
+    justify-content: space-between;
+}
+#top h1{ 
+    font-size: 4em;
     color:#d86a0e;
-    justify-self: center;
+    margin-right: 40px;
 }
 #izq, #der{
     display: flex;
@@ -32,21 +39,66 @@
     margin:20px;
     justify-items: center;
 }
+.pie{
+    margin:10px;
+    font-style: italic;
+    font-size: 1.2em;
+}
+#der h3{
+    color:#ff5454;
+    align-self: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+
+}
 #der{
+    margin-top: 20px;
     flex-direction: column;
     justify-content: flex-start;
 }
 #der .noticias{
     width: 200px;
     height: 100px;
-    margin:20px
+    margin:20px;
 }
 #izq img{
     width:400px;
     height: 240px;
 }
-.pie{
-    margin:10px;
-    font-style: italic;
-    font-size: 1.2em;
+
+#img{
+    display: none;
+    margin-right: 50px;
+    justify-self: right;
 }
+#der img{
+    width: inherit;
+    height: inherit;
+}
+#linea{
+    height: inherit;
+    background-color:#d86a0e;
+    width: 10px;
+}
+
+
+/* ESTILOS DE NOTI.HTML */
+#columna{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+#columna #imgcab{
+    margin: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+}
+#columna #texto{
+    margin:60px;
+    font-size: 1.3em;
+    margin-top: 20px;
+}
+#texto .pie{
+    font-size: 0.7em;
+}
+

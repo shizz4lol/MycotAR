@@ -1,10 +1,10 @@
-function correcion(event) {
+function correcion(event,id) {
     event.preventDefault(); // evita que el formulario se recargue
     var form = document.getElementById("form");
     const preguntas = form.getElementsByClassName("pregun");
+    var resultado= document.getElementById("r");
     let aciertos = 0;
     let total = preguntas.length;
-
     for (let i = 0; i < preguntas.length; i++) {
         let pregunta = preguntas[i];
         let inputs = pregunta.getElementsByTagName("input");
@@ -29,8 +29,23 @@ function correcion(event) {
         }
     }
     if(aciertos==total){
+        otro=document.getElementById('otro')
+        otro2=document.getElementById('volver')
         form.innerHTML="";
-        document.getElementById("r").innerHTML = 'Lo lograste!!!!!!';
+        resultado.innerHTML = '¡Lo lograste!<br>';
+        otro.style.display='inline';
+        otro2.style.display='inline';
+        console.log(otro)
+        otro.onclick = function() {
+            if (id == 'f1') {
+                window.location.replace('test2.html');
+            } else if (id=='f2'){
+                window.location.replace('test1.html');
+            }
+        }
+        otro2.onclick= function(){
+            window.location.replace('juegos.html');
+        }
     }
     
 }

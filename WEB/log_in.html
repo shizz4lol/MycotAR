@@ -12,7 +12,15 @@
 <body>
     <header>
         <nav>
-            <div id="menu"><img src="Imagenes-Multimedia/lineas_menu.png" alt="menu" width="50px" height="50px"></div>
+            <div id="menu"><img src="Imagenes-Multimedia/lineas_menu.png" alt="menu" width="50px" height="50px">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">Sobre nosotros</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li><a href="juegos.html">Juegos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="log_in.html">Log In</a></li>
+                </ul></div>
             <div class="txt-head">
                 <div class="header-link"><a href="home.html">Home</a></div>
                 <div class="header-link"><a href="about.html">Sobre nosotros</a></div>
@@ -25,14 +33,14 @@
        </header>
        <div id="contenido">
         <h1 id="titulo_form">LOG IN</h1>
-        <form action="#" method="post" class="form" id="login" onsubmit="return verif_vacio(event)">
+        <form action="#" method="post" class="form" id="login" onsubmit="return verif(event)">
             <label for="nom" class="label">Nombre de usuario</label>
-            <input type="text" id="nom" name="nom" class="campo"><br>
+            <input type="text" id="nom" name="nom" class="campo" maxlength="20"><br>
             <p class="warning" id="nom2"></p> 
             <label for="correo" class="label">Contraseña</label>
-            <input type="password" id="contra" name="contra" class="campo"><br>
+            <input type="password" id="contra" name="contra" class="campo" maxlength="15"><br>
             <p  class="warning" id="pass"></p>
-            <input type="submit" id="enviar" value="ENVIAR" onclick="return comprobar(event)">
+            <input type="submit" id="enviar" value="ENVIAR" >
             <p id="exito" class="exitoso"></p>
         </form>
        </div>

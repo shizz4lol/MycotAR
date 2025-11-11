@@ -1,6 +1,8 @@
 h1{
     color:#d86a0e;
     margin:10px;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 #contenido{
     width: 100%;
@@ -12,16 +14,11 @@ h1{
 #test{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    height: 400px;
+    align-items: center;
+    height: 300px;
 }
-.boton{
-    height: 100px;
-    width: 300px;
-    border:10px solid #f44548;
-    background-color: white;
-    border-radius: 50px;
-    font-size: 1.8em;
+p{
+    color: #f18429;
     font-weight: bold;
-    color:#f44548;
+    font-size: 2em;
 }

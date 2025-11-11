@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST</title>
+    <link rel="stylesheet" href="CSSfijo.css" type="text/css">
+    <link rel="stylesheet" href="CSStest.css" type="text/css">
+    <script type="text/javascript" src="JSjuegos.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="menu"><img src="Imagenes-Multimedia/hongoe.png" alt="menu" width="70px" height="80px">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">Sobre nosotros</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li><a href="juegos.html">Juegos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="log_in.html">Log In</a></li>
+                </ul></div>
+    
+            <div class="txt-head">
+                <div class="header-link"><a href="home.html">Home</a></div>
+                <div class="header-link"><a href="about.html">Sobre nosotros</a></div>
+                <div class="header-link"><a href="noticias.html">Noticias</a></div>
+                <div class="header-link"><a href="juegos.html">Juegos</a></div>
+                <div class="header-link"><a href="contacto.html">Contacto</a></div>
+                <div class="header-link"><a href="log_in.html">Log In</a></div>
+            </div>
+        </nav>
+       </header>
+       <section>
+        <form action="#" method="post" onsubmit="correcion(event,'f2')" id="form">
+            <h1 id="f2">Nivel Medio: profundizando en el mundo fungi</h1>
+            <div id="preguntas">
+                <div class="pregun">
+                    <p class="consigna">¿Cuál es el principal componente de la pared celular de los hongos?</p>
+                    <input type="radio" id="q1a" name="q1" value="f">
+                    <label for="q1a">Celulosa – presente paredes celulares de plantas, proporciona rigidez</label><br>
+                    <input type="radio" id="q1b" name="q1" value="v">
+                    <label for="q1b">Quitina – aporta resistencia y flexibilidad, presente en paredes celulares</label><br>
+                    <input type="radio" id="q1c" name="q1" value="f">
+                    <label for="q1c">Lignina – presente en madera y algunas plantas</label>
+                </div>
+                
+                <div class="pregun">
+                    <p class="consigna">¿Qué son los líquenes?</p>
+                    <input type="radio" id="q2a" name="q2" value="f">
+                    <label for="q2a">Hongos parásitos de las algas</label><br>
+                    <input type="radio" id="q2b" name="q2" value="v">
+                    <label for="q2b">Asociaciones simbióticas entre hongos y algas o cianobacterias</label><br>
+                    <input type="radio" id="q2c" name="q2" value="f">
+                    <label for="q2c">Frutas formadas por hongos</label>
+                </div>
+                
+                <div class="pregun">
+                    <p class="consigna">¿Qué son las hifas?</p>
+                    
+                    <input type="radio" id="q3a" name="q3" value="f">
+                    <label for="q3a">Esporas sexuales</label><br>
+                    <input type="radio" id="q3b" name="q3" value="f">
+                    <label for="q3b">Células especializadas del basidiocarpo</label><br>
+                    <input type="radio" id="q3c" name="q3" value="v">
+                    <label for="q3c">Filamentos que forman el cuerpo vegetativo del hongo</label><br>
+                </div>
+                
+                <div class="pregun">
+                    <p class="consigna">¿Cuál es la función de las hifas en un hongo?</p>
+                    <input type="radio" id="q4a" name="q4" value="f">
+                    <label for="q4a">Reproducirse</label><br>
+                    <input type="radio" id="q4b" name="q4" value="v">
+                    <label for="q4b">Transportar y absorber nutrientes</label><br>
+                    <input type="radio" id="q4c" name="q4" value="f">
+                    <label for="q4c">Proteger al micelio</label>
+                </div>
+                
+                <div class="pregun">
+                    <p class="consigna">¿Qué es el micelio?</p>
+                    <input type="radio" id="q5a" name="q5" value="v">
+                    <label for="q5a">El conjunto de hifas de un hongo</label><br>
+                    <input type="radio" id="q5b" name="q5" value="f">
+                    <label for="q5b">La espora reproductiva</label><br>
+                    <input type="radio" id="q5c" name="q5" value="f">
+                    <label for="q5c">La parte visible del hongo</label>
+                </div>
+                
+                <div class="pregun">
+                    <p class="consigna">¿Qué relación tienen los hongos con la descomposición?</p>
+                    <input type="radio" id="q6a" name="q6" value="f">
+                    <label for="q6a">Inhiben la descomposición</label><br>
+                    <input type="radio" id="q6b" name="q6" value="v">
+                    <label for="q6b">Son principales descomponedores de materia orgánica</label><br>
+                    <input type="radio" id="q6c" name="q6" value="f">
+                    <label for="q6c">Solo descomponen minerales</label>
+                </div>
+                
+                <div class="pregun">
+                    <p class="consigna">¿Qué es la bioluminiscencia en hongos?</p>
+                    <input type="radio" id="q7a" name="q7" value="v">
+                    <label for="q7a">Emisión de luz por reacciones químicas</label><br>
+                    <input type="radio" id="q7b" name="q7" value="f">
+                    <label for="q7b">Absorción de luz solar</label><br>
+                    <input type="radio" id="q7c" name="q7" value="f">
+                    <label for="q7c">Reflejo de luz externa</label>
+                </div>
+                
+            </div>
+            <div><input type="submit" value="LISTO" class="boton" value="LISTO"></div>
+        </form>
+        <div id="res">
+            <p id="r"></p></div>
+        <div id="b">
+            <button id="otro" class="boton" >OTRO</button> 
+            <button id="volver" class="boton" >VOLVER</button><br>
+            
+        </div>     
+       </section>
+       
+       <footer>
+            <div class="foot-desc">MycotAR© since 2025</div>
+            <div class="foot-desc">Por: Ámbar L. Rizzuto</div>
+            <div class="foot-desc">Contactanos por: mycotarforo@gmail.com</div>
+       </footer>
+</body>
+</html>

@@ -11,7 +11,15 @@
 <body >
     <header>
         <nav>
-            <div id="menu"><img src="Imagenes-Multimedia/lineas_menu.png" alt="menu" width="50px" height="50px"></div>
+            <div id="menu"><img src="Imagenes-Multimedia/lineas_menu.png" alt="menu" width="50px" height="50px">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">Sobre nosotros</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li><a href="juegos.html">Juegos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="log_in.html">Log In</a></li>
+                </ul></div>
             <div class="txt-head">
                 <div class="header-link"><a href="home.html">Home</a></div>
                 <div class="header-link"><a href="about.html">Sobre nosotros</a></div>
@@ -24,12 +32,12 @@
        </header>
        <div id="contenido">
         <h1 id="titulo_form">¡Contactanos!</h1>
-        <form action="#" method="post" class="form" id="form"  onsubmit=" return verif_vacio(event)">
+        <form action="#" method="post" class="form" id="form"  onsubmit=" return verif(event)">
             <label for="nom" class="label">Nombre y Apellido</label>
             <input type="text" id="nom" name="nom" class="campo" placeholder="Nombres - Apellido" >
             <p class="warning" id="nom2"></p>
             <label for="correo" class="label">Correo</label>
-            <input type="text" id="correo" name="correo" class="campo"  placeholder="Correo electronico" maxlength="50">
+            <input type="text" id="correo" name="correo" class="campo"  placeholder="micorreo123@gmail.com" maxlength="50">
             <p class="warning" id="correo2"></p>
             <label for="razon" class="label">Razon de contacto</label>
             <input type="text" id="razon" name="razon" class="campo" placeholder="Ingrese su razon" maxlength="40">

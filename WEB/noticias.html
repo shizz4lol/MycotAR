@@ -10,7 +10,15 @@
 <body>
     <header>
         <nav>
-            <div id="menu"><img src="Imagenes-Multimedia/lineas_menu.png" alt="menu" width="50px" height="50px"></div>
+            <div id="menu"><img src="Imagenes-Multimedia/lineas_menu.png" alt="menu" width="50px" height="50px">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">Sobre nosotros</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li><a href="juegos.html">Juegos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="log_in.html">Log In</a></li>
+                </ul></div>
             <div class="txt-head">
                 
                 <div class="header-link"><a href="home.html">Home</a></div>
@@ -22,11 +30,15 @@
             </div>
         </nav>
        </header>
-       <section>            <div id="h1"><h1>Noticias</h1></div><br>
+       <section>            
+        <div id="top">
+            <div id="titulo"><h1>Noticias</h1></div>
+            <div id="img"><img src="Imagenes-Multimedia/masnoti.png" width="70" height="80"></div>
+        </div><br>
         <div id="contenido">
 
             <div id="izq">
-                <div class="noticias"><div><img src="Imagenes-Multimedia/amanita.webp"></div>
+                <div class="noticias"><div><a href="noti.html"><img src="Imagenes-Multimedia/amanita.webp"></a></div>
                 <p class="pie">¿Cual es la diferencia entre los hongos <br>venenosos y los comestibles?</p></div>
                 <div class="noticias"><div><img src="Imagenes-Multimedia/champicomida.webp"></div>
                 <p class="pie">Las mejores recetas para comer setas en casa</p></div>
@@ -39,12 +51,16 @@
                 <div class="noticias"><div><img src="Imagenes-Multimedia/hifa.webp"></div>
                 <p class="pie">¿Que son las hifas? <br> Sobre el micelio.</p></div>
             </div>
+            <div id="linea"></div>
             <div id="der">
-                    <div class="noticias"></div>
-                    <div class="noticias"></div>
-                    <div class="noticias"></div>
-                    <div class="noticias"></div>
-                    <div class="noticias"></div>
+                    <h3>Biblioteca:</h3>
+                    <div class="noticias"><img src="Imagenes-Multimedia/ramaria.jpg" alt="Ramaria Patagonica"></div>
+                    <div class="noticias"><img src="Imagenes-Multimedia/lenguavaca.jpeg" alt="Lengua de Vaca"></div>
+                    <div class="noticias"><img src="Imagenes-Multimedia/liken.jpg" alt="Liquen en arbol"></div>
+                    <div class="noticias"><img src="Imagenes-Multimedia/galerina.jpg" alt="Galerina"></div>
+                    <div class="noticias"><img src="Imagenes-Multimedia/otrobiolumi.jpg" alt="Bioluminiscencia yeii"></div>
+                    <div class="noticias"><img src="Imagenes-Multimedia/esporas.png" alt="Bioluminiscencia yeii"></div>
+                    <div class="noticias"><img src="Imagenes-Multimedia/sombrerolol.jpg" alt="Bioluminiscencia yeii"></div>
             </div>
         </div>
        </section>
@@ -53,5 +69,18 @@
             <div class="foot-desc">Por: Ámbar L. Rizzuto</div>
             <div class="foot-desc">Contactanos por: mycotarforo@gmail.com</div>
        </footer>
+       <script>
+        window.addEventListener("DOMContentLoaded", function() {
+            const img = document.getElementById("img");
+            const accesovalido = sessionStorage.getItem("login");
+            if (accesovalido =="true") {
+                img.style.display = "inline";
+                sessionStorage.removeItem("login");
+        
+            } else {
+                img.style.display = "none";
+            }
+        });
+        </script>
 </body>
 </html>
