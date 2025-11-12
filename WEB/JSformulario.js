@@ -39,11 +39,9 @@ function verif(event) {
 function otros(){
   var n = document.getElementById("nom");
   var c =document.getElementById("correo");
-  var r =document.getElementById("razon");
   error=0;
   var n2 = document.getElementById("nom2");
   var c2 =document.getElementById("correo2");
-  var r2 =document.getElementById("razon2");
   var reNom=/^[a-zA-Z\s]+$/;
   var reCor=/\w+@\w+\.com$/;
   if (!reNom.test(n.value) && (n.value!="")){
@@ -61,16 +59,23 @@ function login(){
   
   var n = document.getElementById("nom");
   var c =document.getElementById("contra");
-  var ex =document.getElementById("exito");
-  
-  if ((n.value.trim()=="ambar")&&(c.value.trim()=='micontra')){
+  var ex =document.getElementById("exito2");
+  var c2=document.getElementById("contra2");
+
+  if (c.value.length<5){
+    c2.innerHTML="CONTRASEÑA INVALIDA";
+  }
+  else if ((n.value.trim()=="ambar")&&(c.value.trim()=='micontra')){
       sessionStorage.removeItem("login");
       sessionStorage.setItem("login", "true");
       window.location.replace('noticias.html');
-      
-
   }
-  else if ((n.value.trim())&&(c.value.trim())){
-    ex.innerHTML="Usuario no registrado!!!";
+  else if((n.value.trim()=="ambar")&&(c.value)){
+    c2.innerHTML="Contraseña incorrecta";
+    ex.innerHTML="OLVIDE MI CONTRASEÑA";
   }
-}
+  else if((n.value.trim())&&(c.value.trim())){
+    ex.innerHTML="¡Usuario NO registrado!";
+  }
+  }
+  
