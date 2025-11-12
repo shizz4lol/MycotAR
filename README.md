@@ -11,4 +11,4 @@ Estructura del sitio web:<br>
 
 En total, son 9 archivos HTML, 7 archivos CSS y 2 archivos JS, siendo 18 archivos en total. Cuenta, además, con un directorio de imagenes, en donde serian 18 imagenes en total (incluyendo las que son parte del menu o "estetica" general)
 
-
+Finalizacion del proyecto: Lunes 10/11/25
